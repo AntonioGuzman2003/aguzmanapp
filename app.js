@@ -46,6 +46,6 @@ app.get('/productos', (req, res) => {
 app.use(express.static('public'));
 
 // Inicio del servidor
-app.listen(port, () => {
+app.listen(port, '0.0.0.0', () => {
   console.log(`Servidor Express escuchando en el puerto ${port}`);
 });
